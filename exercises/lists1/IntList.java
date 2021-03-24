@@ -20,7 +20,7 @@ public class IntList {
 		IntList cur = this;
 		int count = 0;
 		while(cur != null){
-			count ++;
+			count++;
 			cur = cur.rest;
 		}
 		return count;
