@@ -19,25 +19,27 @@ public class IntList {
 	public int iterativeSize() {
 		IntList cur = this;
 		int count = 0;
-		while(cur != null){
+		while (cur != null) {
 			count++;
 			cur = cur.rest;
 		}
 		return count;
 	}
 
-	/** Returns the ith value in this list.*/
+	/**
+	 * Returns the ith value in this list.
+	 */
 	public int get(int i) {
-		if(i == 0){
+		if (i == 0) {
 			return first;
 		}
 		return rest.get(i - 1);
 	}
 
-	public String toString(){
+	public String toString() {
 		StringBuilder string = new StringBuilder();
 		IntList cur = this;
-		while(cur != null){
+		while (cur != null) {
 			string.append(" ");
 			string.append(cur.first);
 			cur = cur.rest;
